@@ -33,7 +33,7 @@ RUN cd ~ && fetch v8 \
         && echo "target_os = ['android']" >> ../.gclient \
         && gclient sync
 
-RUN apt install gcc-arm-linux-gnueabihf -y
+RUN apt install gcc-9-arm-linux-gnueabihf -y
 RUN apt autoremove -y
 
 RUN cd ~/v8 && sed -i 's/${dev_list} snapcraft/${dev_list}/g' build/install-build-deps.sh \
