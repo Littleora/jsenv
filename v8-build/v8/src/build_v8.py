@@ -22,6 +22,7 @@ v8_static_library = true
 v8_use_external_startup_data = false
 v8_imminent_deprecation_warnings = false
 clang_use_chrome_plugins = false
+v8_enable_webassembly = false
 """
 
 gn_args = [
